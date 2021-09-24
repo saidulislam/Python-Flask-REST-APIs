@@ -9,6 +9,6 @@ class Student(Resource):
         return {'student': name}
 
 
-api.add_resource(Student, '/student/<string:name>') # http://127.0.0.1/student/John
+api.add_resource(Student, '/student/<string:name>') # http://127.0.0.1:5000/student/John
 
 app.run(debug=True)
